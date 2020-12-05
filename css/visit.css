@@ -1,0 +1,126 @@
+h1 {
+    text-align: center;
+    font-family: "bebas neue pro";
+    font-weight: 600;
+    font-size: 45px;
+}
+
+h2 {
+    font-size: 24px;
+    margin: 0;
+    color: #000000;
+    text-transform: uppercase;
+    font-family: "bebas neue pro", sans-serif;
+  
+  }
+
+  h3 {
+    font-size: 20px;
+    font-family: "roboto", sans-serif;
+  }
+
+  p {
+    line-height: 1.1;
+    font-size: 16px;
+    font-family: "roboto", sans-serif;
+  }
+
+.page-header {
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+
+.o-grid {
+    display: flex;
+    margin-left: 10%;
+    margin-right: 10%;
+    flex-flow: row wrap;
+}
+
+
+.band {
+    width: 90%;
+    max-width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    margin-top: 60px;
+  }
+  
+  .card {
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    position: relative;
+    top: 0;
+    transition: all .1s ease-in;
+  }
+  
+  .card:hover {
+    top: -3px;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card article {
+    padding: 20px;
+    font-family: "bebas neue pro light";
+  }
+  
+  
+  .card span {
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 2em 0 0 0;
+  }
+  
+  
+  
+  .card .thumb {
+    padding-bottom: 50%;
+    background-size: cover;
+    background-position: center center;
+  }
+  
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 20px;
+    margin-top: 80px;
+}
+  
+.column {
+    flex: 25%;
+    max-width: 100%;
+    padding: 0 10px;
+}
+
+.column img {
+    margin-top: 10px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.column .btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .o-grid {
+        margin-top: 80px;
+    }
+
+}
+
+
