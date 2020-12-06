@@ -1,7 +1,6 @@
 .navbar-index {
   max-width: 100%;
-  height: 80;
-  background: black;
+  background: #fb8b00;
   background-repeat: no-repeat;
   overflow: auto;
   display: flex;
@@ -29,8 +28,8 @@
 }
 
 .navbar-index a:hover {
-  background-color: rgb(60, 255, 0);
-  color: #000000;
+  background-color: #fba232;
+  color: #ffffff;
 }
 
 .page-header {
@@ -45,12 +44,12 @@
   max-width: 100%;
   margin-bottom: 40px;
   width: 100%;
-  height: 400px;
+  height: 500px;
   display: flex;
   position: relative;
-  background-image: url(../images/);
+  background-image: url(../images/robot_reach.jpg);
   background-size: cover;
-  background-position: center center;
+  background-position: center bottom;
   background-repeat: no-repeat;
 }
 
@@ -64,7 +63,7 @@
 }
 
 .card {
-  background: rgb(255, 255, 255);
+  background-color: black;
   color: rgb(0, 0, 0);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   display: flex;
@@ -80,47 +79,25 @@
   box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
 }
 
-.card article {
-  padding: 20px;
-  font-family: "bebas neue pro light";
-}
 
-.card h1 {
-  font-size: 20px;
-  margin: 0;
-  color: #000000;
-  text-transform: uppercase;
-  font-family: "Roboto", sans-serif;
-}
-
-.card p {
-  line-height: 1;
-  font-size: 12px;
-}
-
-.card span {
-  font-size: 12px;
-  font-weight: bold;
-  text-transform: uppercase;
-  margin: 2em 0 0 0;
-}
 
 .card .btn-card {
   color: black;
-  width: 80px;
+  width: 100px;
   position: absolute;
   right: -5px;
   bottom: -5px;
-  background-color: rgb(60, 255, 0);
+  background-color: #3E2362;
   color: #ffff;
   padding: 10px;
+  font-size: 1em;
   border: none;
   cursor: pointer;
   border-radius: 0px 10px 0px 10px;
 }
 
 .card .btn-card:hover {
-  background-color: rgb(0, 0, 0);
+  background-color: #fb8b00;
   bottom: -3px;
   box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
 }
@@ -135,10 +112,6 @@
   .band {
     grid-template-columns: 1fr 1fr;
   }
-
-  .story-1 {
-    grid-column: 1 / span 2;
-  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -149,6 +122,6 @@
 
 @media screen and (min-width: 850px) {
   .band {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr ;
   }
 }
