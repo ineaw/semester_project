@@ -1,0 +1,46 @@
+
+
+.donationsForm {
+    font-family: "roboto", sans-serif;
+    color: #000000;
+}
+
+.donationsFormInner {
+    margin-bottom: 1em;
+}
+
+input:invalid+span:after {
+    content: '*Requierd';
+    padding-left: 5px;
+}
+
+input:valid+span:after {
+    content: 'NOK';
+    padding-left: 5px;
+}
+
+input[type="submit"] {
+    display: none;
+
+}
+
+.donateBtn {
+    color: black;
+    width: 100px;
+    right: 10px;
+    bottom: 10px;
+    background-color: #3E2362;
+    color: #ffff;
+    padding: 10px;
+    font-size: 1em;
+    border: none;
+    cursor: pointer;
+    border-radius: 0px 10px 0px 10px;
+}
+
+ .donateBtn:hover {
+    background-color: #fb8b00;
+    bottom: 13px;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+  }
+  

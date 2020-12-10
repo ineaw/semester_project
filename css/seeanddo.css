@@ -31,23 +31,7 @@ h2 {
 }
 
 
-.o-grid {
-    display: flex;
-    margin-left: 10%;
-    margin-right: 10%;
-    flex-flow: row wrap;;
-}
 
-
-.band {
-    width: 90%;
-    max-width: 100%;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    margin-top: 60px;
-  }
   
   .card {
     background: black;
@@ -66,11 +50,18 @@ h2 {
     box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
   }
   
-  .card article {
-    padding: 20px;
-    font-family: "bebas neue pro light";
+  .card-grid {
+    width: 100%;
+    position: relative;
+    border: solid #f2f2f2 0.1em;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+
   }
-  
+  .card-grid:hover {
+    top: -3px;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+  }
+
   
   .card span {
     font-size: 12px;
@@ -78,32 +69,16 @@ h2 {
     text-transform: uppercase;
     margin: 2em 0 0 0;
   }
-  
-  .card .btn-card {
-    color: black;
-    width: 80px;
-    position: absolute;
-    right: -5px;
-    bottom: -5px;
-    background-color: rgb(214, 11, 136);
-    color: #ffff;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
-    border-radius: 0px 10px 0px 10px;
+
+  .about-text p:nth-child(1) {
+    font-weight: 600;
   }
   
-  .card .btn-card:hover {
-    background-color: orange;
-    bottom: -3px;
-    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
-  
-  }
-  
-  .card .thumb {
+ .card_image {
     padding-bottom: 30%;
     background-size: cover;
     background-position: center center;
+    background-image: url("/images/guy_mobile.jpg");
   }
   
 
@@ -136,8 +111,5 @@ h2 {
 
 @media screen and (max-width: 768px) {
 
-    .o-grid {
-        margin-top: 80px;
-    }
 
 }

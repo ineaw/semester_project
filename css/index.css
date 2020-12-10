@@ -1,58 +1,68 @@
-.navbar-index {
-  max-width: 100%;
-  background: #fb8b00;
-  background-repeat: no-repeat;
-  overflow: auto;
-  display: flex;
-  justify-content: center;
-  padding-top: 10px;
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-}
-
-.navbar-index a {
-  color: white;
-  font-size: 30px;
-  font-family: "bebas neue pro";
-}
-
-.btn {
-  border-radius: 0px 20px 20px 20px;
-  height: 20px;
-  padding: 15px;
-}
-
-.navbar-index ul {
-  text-align: center;
-}
-
-.navbar-index a:hover {
-  background-color: #fba232;
-  color: #ffffff;
-}
 
 
 .hero {
   max-width: 100%;
-  margin-bottom: 40px;
   width: 100%;
   height: 500px;
+  margin-top: 65px;
   display: flex;
-  position: relative;
-  background-image: url(../images/robot_reach.jpg);
+  position: relative;  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  background-image: url("../images/robot_reach.jpg");
   background-size: cover;
   background-position: center bottom;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
-.band {
+.hero h1 {
+  font-size: 3em;
+  color: #000000;
+  text-transform: uppercase;
+  font-family: "industry", Arial, Helvetica, sans-serif;
+}
+
+.hero .btn {
+  display: block;
+  width: 150px;
+  padding: 0.5em;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #000000;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  font-family: "bebas neue pro", Arial, Helvetica, sans-serif;
+  border-radius: 0em 0.7em 0.7em 0.7em ;
+  transition-property: all;
+  transition-duration: 0.5s;
+}
+
+
+.introWrap {
+ background-color: rgb(167, 236, 167);
+ width: 60%;
+ padding: 1em;
+
+
+}
+
+.CTAinner > div {
+  width: 50%;
+}
+/* Content Grid*/
+
+.card_grid {
   width: 90%;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
-  gap: 20px;
+  gap: 30px;
 }
 
 .card {
@@ -74,47 +84,35 @@
 
 
 
-.card .btn-card {
-  color: black;
-  width: 100px;
-  position: absolute;
-  right: 10px;
-  bottom: 10px;
-  background-color: #3E2362;
+.card .fas {
+  position: relative;
   color: #ffff;
-  padding: 10px;
   font-size: 1em;
-  border: none;
   cursor: pointer;
-  border-radius: 0px 10px 0px 10px;
+  padding: 5px;
 }
 
-.card .btn-card:hover {
-  background-color: #fb8b00;
-  bottom: 13px;
-  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+.card .fas:hover {
+  right: -1em;
 }
-
-.card .thumb {
-  padding-bottom: 60%;
+.card .card_image {
+  padding-bottom: 40%;
   background-size: cover;
   background-position: center center;
 }
 
-@media screen and (min-width: 500px) {
-  .band {
+@media screen and (min-width: 600px) {
+  .card_grid{
     grid-template-columns: 1fr 1fr;
   }
 }
 
-@media only screen and (max-width: 768px) {
-  .navbar-index {
-    display: none;
-  }
+@media only screen and (max-width: 800px) {
+
 }
 
-@media screen and (min-width: 850px) {
-  .band {
+@media screen and (min-width: 900px) {
+  .card_grid {
     grid-template-columns: 1fr 1fr 1fr ;
   }
 }

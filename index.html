@@ -4,6 +4,7 @@
     <title>Community Science Museum</title>
     <meta name="description" content="Science museum for " />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
     <link href="css/index.css" rel="stylesheet" />
     <link href="css/global.css" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/40834ce6db.js" crossorigin="anonymous"
@@ -11,110 +12,111 @@
     <link rel="stylesheet" href="https://use.typekit.net/ohb4asl.css">
   </head>
   <body>
+    <div id="top" class="arrowToTop"></div>
     <!--Navigation menu-->
     <header>
-      <nav class="menu">
+      <div class="menu">
         <a href="/index.html">
-          <img class="Logo" src="images/Asset_2.png" alt="Logo, home button">
+          <img class="Logo" src="images/Logobl.png" alt="Logo, home button">
           </a>
           <input type="checkbox" id="menuToggle">
           <label for="menuToggle" class="menu-icon"><i class="fa fa-bars"></i></label>
           <ul>
-              <a href="learning.html"><li>Learn</li></a>
-              <a href="seeanddo.html"><li>See & Do</li></a>
-              <a href="visit.html"><li>Visit</li></a>
+              <li><a href="/learning.html">Learning</li></a>
+              <li><a href="/seeanddo.html">See & Do</li></a>
+              <li><a href="/visit.html">Visit</li></a>
+              <li><input type="text" placeholder="Search.." button class="searchBtn"><i class="fas fa-search"></i></button></li>
           </ul>
-      </nav>
+        </div>
   </header>
-  <section class="navbar-index">
-    <ul>
-    <a class="btn" href="#">ROBOTICS & AI</a>
-      <a class="btn" href="#">EVOLUTION</a>
-      <a class="btn" href="#">BIOLOGY</a>
-      <a class="btn" href="#">SPACE</a>
-    </ul>
-  </section>
+    <nav class="navbar-index">
+    <a class="btn" href="/exhibition.html#AI">ROBOTICS & AI</a>
+      <a class="btn" href="/exhibition.html#evolution">EVOLUTION</a>
+      <a class="btn" href="/exhibition.html#biology">BIOLOGY</a>
+      <a class="btn" href="/exhibition.html#space">SPACE</a>
+    </nav>
   <!--Navigation ends-->
   <!--main section-->
-<main>
-  <section class="hero">
-  </section>
-  <a href="#id-used-by-anchor">bottom of page</a>
-  <section class="contentText">
 
-  <h1>Explore together</h1>
+  <main>
+
+  <section class="hero">
+    <div class="call-to-action">
+      <h1>Explore together</h1>
+      <div class="action">
+        <a class="btn" href="exhibition.html" class="btn">Shop Now</a>
+      </div>
+    </div>
+  </section>  <div class="introWrap">
+    <div class="CTAinner">
+      <div class="CTA__info">
+        <h2>Explore together</h2>
+      </div>
+      <div class="CTA__text">
+        <p> Come join us at the Community Science Museum where we’re committed to making science accessible to all. Over the course of human history, science has developed from our early understanding of fire, wind, water, and earth to exploring everything from galaxies far away to the very building blocks of life itself. 
+        </p>
+        <a href="/exhibition.html"><i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </div>
+    <article class="about-text">
   <p>
-Come join us at the Community Science Museum where we’re committed to making science accessible to all.
-Over the course of human history, science has developed from our early understanding of fire, wind, water, and earth to exploring everything from galaxies far away to the very building blocks of life itself.
+Come join us at the Community Science Museum where we’re committed to making science accessible to all.</p>
+<p>Over the course of human history, science has developed from our early understanding of fire, wind, water, and earth to exploring everything from galaxies far away to the very building blocks of life itself.
     </p>
-  </section>
+    </article>
   <!--Content Cards-->
-<div class="band">
+<div class="card_grid">
   <div class="story-1">
-    <a href="" class="card">
-      <div class="thumb" style="background-image: url(/images/exhibition_overview.jpg);"></div>
-      <article><h2>Exhibitions</h2>
-        <span><button class="btn-card">Read more</span>
-      </article>
+    <a href="/exhibition.html" class="card">
+      <div class="card_image" style="background-image: url(/images/exhibition_overview.jpg);"></div>
+     <span><h2>All Exhibitions<i class="fas fa-arrow-right"></i></h2></span> 
     </a>
   </div>
   <div class="story-2">
-    <a href="" class="card">
-      <div class="thumb" style="background-image: url(/images/lift_off.jpg);"></div>
-      <article><h2>Cosmology</h2>
-        <span><button class="btn-card">Read more</span>
-      </article>
+    <a href="/exhibition.html#space" class="card">
+      <div class="card_image" style="background-image: url(/images/lift_off.jpg);"></div>
+    <span><h2>Cosmology<i class="fas fa-arrow-right"></i></h2></span> 
     </a>
   </div>
   <div class="story-3">
     <a href="" class="card">
-      <div class="thumb" style="background-image: url(/images/space_dinos.jpg);"></div>
-      <article><h2>EVOLUTION</h2>
-        <span><button class="btn-card">Read more</span>
-      </article>
+      <div class="card_image" style="background-image: url(/images/space_dinos.jpg);"></div>
+     <span><h2>Evolution<i class="fas fa-arrow-right"></i></h2></span> 
     </a>
   </div>
   <div class="story-4">
     <a href="" class="card">
-      <div class="thumb" style="background-image: url(/images/robot_closeup_blur.jpg);"></div>
-      <article><h2>Robotics & AI</h2>
-        <span><button class="btn-card">Read more</span>
-      </article>
+      <div class="card_image" style="background-image: url(/images/robot_closeup_blur.jpg);"></div>
+      <span><h2>Robotics & AI<i class="fas fa-arrow-right"></i></h2></span> 
     </a>
   </div>
   <div class="story-5">
     <a href="" class="card">
-      <div class="thumb" style="background-image: url(/images/green_science_tube.jpg);"></div>
-      <article><h2>Biology</h2>
-        <span><button class="btn-card">Read more</span>
-      </article>
+      <div class="card_image" style="background-image: url(/images/green_science_tube.jpg);"></div>
+     <span><h2>Biology<i class="fas fa-arrow-right"></i></h2></span> 
     </a>
   </div>
   <div class="story-6">
     <a href="" class="card">
-      <div class="thumb" style="background-image: url(/images/school_work_on_pad.jpg);" ></div>
-      <article><h2>Science @ home</h2>
-        <span><button class="btn-card">Read more</span>
-      </article>
+      <div class="card_image" style="background-image: url(/images/school_work_on_pad.jpg);" ></div>
+     <span><h2>Science @ home<i class="fas fa-arrow-right"></i></h2></span> 
     </a>
   </div>
   <div class="story-7">
     <a href="" class="card">
-      <div class="thumb" style="background-image: url(/images/projections_on_guy.jpg) ;"></div>
-      <article><h2>Events & News</h2>
-        <span><button class="btn-card">Read more</span>
-      </article>
-    </a>
+      <div class="card_image" style="background-image: url(/images/projections_on_guy.jpg) ;"></div>
+  <span><h2>Events<i class="fas fa-arrow-right"></i></h2></span> 
+</a>
   </div>
 </div>
 </main>
         <!--Footer-->
 <footer class="footer-container">
-  <div id="id-used-by-anchor" class="anchor"></div>
   <div class="footer-left">
     <p class="footer-links">
-      <a href="#">About</a>
-      <a href="#">Contact</a>
+      <a href="/about.html">About</a>
+      <a href="/contact.html">Contact</a>
       <a href="/getinvolved.html">Volunteering</a>
       <a href="/donations.html">Donate</a>
     </p>
@@ -127,43 +129,35 @@ Over the course of human history, science has developed from our early understan
       </div>
     </div>
     <div class="footer-right">
-      <div>
-        <i class="fa fa-map-marker"></i>
-        <span><p>Exhibition Road 555, Science Valley, Norway</p></span>
-      </div>
-      <div>
-        <i class="fa fa-phone"></i>
+      <p>CONTACT US</p>
+        <p>Exhibition Road 555, Science Valley, Norway</p>
         <p>+1 222 333 444</p>
-      </div>
-      <div>
-        <i class="fa fa-envelope"></i>
         <p><a href="mailto:support@company.com">contact@community.com</a></p>
-      </div>
       </div>
 </footer>
         <!--sub footer-->
 <div class="footer_2">
-<div class="form-container">
   <ul><section class="contact-form">
-    <h2>newsletter sign up</h2>
     <form action="Submit.php" method="GET"></form>
     <fieldset class="email">
-      <label for="email">Email</label>
+      <label for="email"><p>newsletter sign up</p></label>
       <input type="email" name="email" placeholder="example@gmail.com">
-<button type="submit">Join our list</button>
+<button type="submit">Sign Up</button>
     </fieldset>
               </div>
-</section>
+<div class="socialmedia">
 <section class="sm-icons">
   <a class="fa fa-facebook" a href="https://facebook.com"></a>
   <a class="fa fa-twitch" a href="https://twitch.com"></a>
   <a class="fa fa-instagram" a href="https://instagram"></a>
   <a class="fa fa-youtube" a href="https://youtube"></a>
 </section>
-</ul>
 </div>
 <section class="copyright">
   <p class="company-name">Community Science Museum, 2020 &copy;</p>
   </section>
+  <div class="arrowToTop">
+  <a href="#top" class="fa fa-arrow-up"></a>
+</div>
 </body>
 </html>

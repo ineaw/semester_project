@@ -12,40 +12,57 @@
 </head>
   </head>
   <body>
-      <header>
+        <div id="top" class="arrowToTop"></div>
+        <!--Navigation menu-->
+        <header>
           <nav class="menu">
             <a href="/index.html">
-              <img class="Logo" src="images/Artboard 1.png" alt="Logo, home button">
+              <img class="Logo" src="images/Logobl.png" alt="Logo, home button">
               </a>
               <input type="checkbox" id="menuToggle">
               <label for="menuToggle" class="menu-icon"><i class="fa fa-bars"></i></label>
               <ul>
-                  <a href="/learning.html"><li>Learning</li></a>
-                  <a href="/seeanddo.html"><li>See & Do</li></a>
-                  <a href="/visit.html"><li>Visit</li></a>
-                  <input type="text" placeholder="Search..">
+                  <li><a href="/learning.html">Learning</li></a>
+                  <li><a href="/seeanddo.html">See & Do</li></a>
+                  <li><a href="/visit.html">Visit</li></a>
+                  <li><input type="text" placeholder="Search.." button class="searchBtn"><i class="fas fa-search"></i></button></li>
               </ul>
           </nav>
       </header>
-      <div class="navbar">
+    <section class="navbar-index">
         <ul>
-        <a class="btn" href="#">Info</a>
+        <a class="btn" href="#hours" class="anchor">Opening HOURS</a>
+          <a class="btn" href="#location" class="anchor">Location</a>
         </ul>
-      </div>
-      <main>
+      </section>
+      <!--Navigation ends-->
+          <main>
+            <section class="mainWrapper">
+
+        <div class="contentText">
           <H1>Visit us</H1>
-          <p class="page-header">We are open from Monday 14 December and following the safety guidelines of the current situation </p>
-    <div class="band">
+
+
+          <p>We are open from Monday 14 December and following the safety guidelines of the current situation. </p>
+        </div>
+          <section class="content">
         <a class="card">
-          <div class="thumb" style="background-image: url(../images/exhibition_overview.jpg);"></div>
-          <article><h2>Opening Times <i class="fa fa-clock"></i></h2>   
+          <div id="hours"></div>
+
+          <div class="card_image" style="background-image: url(../images/exhibition_overview.jpg);"></div>
+          <article class="card-text">
+            <ul>
+          <h2><i class="fa fa-clock"></i>Opening Times</h2>   
                 <p>Wednesday to Sunday 10.00-18.00 (last entry 17.30).</p>
                 <p>
-                  During school holidays the museum is open as normal. The museum is closed on 24, 25 and 26 December.
+                  During school holidays the museum is open as normal.</p>
+                  <p> The museum is closed on 24, 25 and 26 December.
                   </p>
-                           </article>
+                </ul>
+          </article>
         </a>
         <div class="card-grid">
+          <article class="about-text">
   <H3>Admission</H3>
   <p> The entrance is free for all.
 There are guided tours of the museum that leave every hour. These tours are 70 NOK per person and include a handy printed guide of the museum. 
@@ -53,89 +70,89 @@ If you would like to organise a guided tour for your group of 6 or more people, 
   </p>
       <H3>Accessibility</H3>
       <p> 
-        The museum has wheelchair accessibility ramps. It also has audio guides and braille display signs for the visually impaired.
-        Food and drink
-        There is a café attached to the museum where you can get light lunches, soft drinks, coffee, snacks and more.
+        The museum has wheelchair accessibility ramps. 
+        It also has audio guides and braille display signs for the visually impaired.
       </p>
           <H3>Food and Drink</H3>
           <p> 
-            Food and drink
             There is a café attached to the museum where you can get light lunches, soft drinks, coffee, snacks and more.
           </p>
               <H3>Shop</H3>
               <p> 
                 Our shop offers a range of memorabilia from the museum as well as great gifts and activity packs that allow you to continue to explore science even after you’ve left the museum.
               </p>
+              </article>
         </div>
                  <a class="card">
-                  <div class="thumb" style="background-image: url(../images/outside_museum.jpg);"></div>
-                  <article><h2>Location</h2>   
-                    <h3>The museum is located at</h3>  
-                       <p><i class="fa fa-map-marker"></i>
-                        <span>Exhibition Road 555</span>
+                  <div id="location" class="anchor"></div>
+
+                  <div class="card_image" style="background-image: url(../images/outside_museum.jpg);"></div>
+                  <article class="card-text">
+
+                  <ul>
+                  <h2><i class="fa fa-map-marker"></i>Location</h2>   
+                    <p>The museum is located at</p>                        
+                        <p> 555 exhbition Road</p>
                         <p>Science Valley, Norway</p>
-                      </article>
+                      </ul>
+                        </article>
+
                      </div>  
                     </a> 
-                    </div>                                
-                <iframe style="border: 3px;  
-                width: 300px; height: 300px; margin-left: 25%;"  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1996.9026395063347!2d10.781184051402995!3d59.96693846668889!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464171e7ee7ede69%3A0x3f728e95cf11fb30!2sNorsk%20Teknisk%20Museum!5e0!3m2!1sno!2sno!4v1606737872591!5m2!1sno!2sno" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                  </div>
+                    </section>
       </main>
-      <footer class="footer-container">
-        <div class="footer-left">
-          <p class="footer-links">
-            <a href="#">About</a>
-            <a href="#">Contact</a>
-            <a href="/career.html">Volunteering</a>
-            <a href="#">Donate</a>
-          </p>
-        </div>
-          <div class="footer-center">
-            <p class="footer-hours">
-              <span>OPENING HOURS</span>
-              <span>From Monday 14 December</span>
-              <span>Wednesday to Sunday 10.00-18.00</span>
+        <!--Footer-->
+        <footer class="footer-container">
+          <div class="footer-left">
+            <p class="footer-links">
+              <a href="/about.html">About</a>
+              <a href="/contact.html">Contact</a>
+              <a href="/getinvolved.html">Volunteering</a>
+              <a href="/donations.html">Donate</a>
             </p>
           </div>
-          <div class="footer-right">
-            <div>
-              <i class="fa fa-map-marker"></i>
-              <p><span>Exhibition Road 555</span>Science Valley, Norway</p>
+            <div class="footer-center">
+              <div class="footer-hours">
+                <p>OPENING HOURS</p>
+                <p>From Monday 14 December</p>
+                <p>Tuesday to Sunday 10.00-18.00</p>
+              </div>
             </div>
-            <div>
-              <i class="fa fa-phone"></i>
-              <p>+1 222 333 444</p>
-            </div>
-            <div>
-              <i class="fa fa-envelope"></i>
-              <p><a href="mailto:support@company.com">contact@community.com</a></p>
-            </div>
-            </div>
-      </footer>
-      <div class="footer_2">
-      <div class="form-container">
-        <ul><section class="contact-form">
-          <h2>newsletter sign up</h2>
-          <form action="Submit.php" method="GET"></form>
-          <fieldset class="email">
-            <label for="email">Email</label>
-            <input type="email" name="email" placeholder="example@gmail.com">
-<button type="submit">Join our list</button>
-          </fieldset>
-                    </div>
-      </section>
-      
-      <section class="sm-icons">
-        <a class="fa fa-facebook" a href="https://facebook.com"></a>
-        <a class="fa fa-twitch" a href="https://twitch.com"></a>
-        <a class="fa fa-instagram" a href="https://instagram"></a>
-        <a class="fa fa-youtube" a href="https://youtube"></a>
-            </section>
-    </ul>
-  </div>
-      <section class="copyright">
-        <p class="company-name">Community Science Museum, 2020 &copy;</p>
+            <div class="footer-right">
+              <p>CONTACT US</p>
+                <p>Exhibition Road 555, Science Valley, Norway</p>
+                <p>+1 222 333 444</p>
+                <p><a href="mailto:support@company.com">contact@community.com</a></p>
+              </div>
+        </footer>
+                <!--sub footer-->
+        <div class="footer_2">
+          <ul><section class="contact-form">
+            <form action="Submit.php" method="GET"></form>
+            <fieldset class="email">
+              <label for="email"><p>newsletter sign up</p></label>
+              <input type="email" name="email" placeholder="example@gmail.com">
+        <button type="submit">Sign Up</button>
+            </fieldset>
+                      </div>
         </section>
-      </body>
+        <div class="socialmedia">
+        <section class="sm-icons">
+          <a class="fa fa-facebook" a href="https://facebook.com"></a>
+          <a class="fa fa-twitch" a href="https://twitch.com"></a>
+          <a class="fa fa-instagram" a href="https://instagram"></a>
+          <a class="fa fa-youtube" a href="https://youtube"></a>
+        </section>
+        </ul>
+        </div>
+        </div>
+        <section class="copyright">
+          <p class="company-name">Community Science Museum, 2020 &copy;</p>
+          </section>
+          <div class="arrowToTop">
+          <a href="#top" class="fa fa-arrow-up"></a>
+        </div>
+              </body>
       </html>
 

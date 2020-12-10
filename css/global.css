@@ -1,11 +1,22 @@
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
+  min-height: 100vh;
   margin: 0;
   padding: 0px;
-  background-color: #f2f2f2;
+  background-color: #ffffff;
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+input:focus {
+  outline: none;
+}
+
 
 a {
   text-decoration: none;
@@ -38,6 +49,12 @@ h2 {
   text-transform: uppercase;
   font-family: "Roboto", sans-serif;
 }
+.card h2 {
+  padding: 5%;
+  font-family: "bebas neue pro light", sans-serif;
+  text-align: start;
+  font-weight: 400;
+}
 
 
 h3 {
@@ -46,15 +63,35 @@ h3 {
   color: #000000;
 }
 
+p {
+  line-height: 1.3;
+  margin: 0;
+  font-size: 18px;
+  font-family: "roboto", sans-serif;
+}
+
+.card-text ul {
+  margin-left: 10px;
+margin-bottom: 40px;
+}
+
+
+.contentText {
+  max-width: 60%;
+  margin: 0 auto;
+}
+
+.about-text {
+  padding: 1em;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
 textarea {
   resize: none;
 }
 
-p {
-  line-height: 1.1;
-  font-size: 16px;
-  font-family: "roboto", sans-serif;
-}
+
 .footer-signup p {
   color: #ffffff;
   text-transform: uppercase;
@@ -68,35 +105,53 @@ header {
   background-color: #ffffff;
   font-family: "bebas neue pro", sans-serif;
   text-transform: uppercase;
-
 }
+
 .menu img {
-  height: 50px;
+  height: 40px;
   float: left;
   padding: 10px;
+  margin-top: 15px;
 }
 .menu {
   width: 100%;
   height: 80px;
   float: right;
   background: #ffffff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   position: fixed;
   top: 0;
-z-index: 1;
+z-index: 2;
 }
 .menu ul {
+  opacity: 0.95;
   padding: 0;
   float: right;
 }
 .menu ul a {
-  color: rgb(0, 0, 0);
+  color: #000000;
   display: inline-block;
   margin-right: 20px;
 }
 .menu ul a:hover {
-  color: #bcfd2b;
+  color: #000000;
 }
+.searchBtn {
+  color: black;
+  font-size: 0.5em;
+  border: none;
+  cursor: pointer;
+  width: 100px;
+  margin-left: -30px;
+}
+
+.fas {
+  font-size: 0.7em;
+  padding: 5px;
+}
+.fas:active {
+color: #fb8b00;
+}
+
 #menuToggle {
   display: none;
 }
@@ -107,10 +162,12 @@ z-index: 1;
 
 .navbar {
   max-width: 100%;
-  height: 60px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   display: flex;
   justify-content: space-around;
+  z-index: 1;
+  position: fixed;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+
 }
 
 .navbar a {
@@ -120,10 +177,9 @@ z-index: 1;
   text-transform: uppercase;
 }
 
-.btn {
+.navbar-index .btn {
   border-radius: 0px 20px 0px 20px;
   padding: 15px;
-line-height: 20px;
 }
 
 .navbar ul {
@@ -137,22 +193,45 @@ line-height: 20px;
   color: #000000;
 }
 
-.head-wrapper {
-  width: 75%;
-  margin: 0 auto;
+.navbar-index {
+  width: 100%;
+  background: #bcfd2b;
+  overflow: auto;
   display: flex;
-  flex-direction: column;
-  min-height: 100%;
-  position: relative;
-  top: 0;
+  justify-content: space-around;
+  position: fixed;
+  z-index: 1;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+padding-top: 10px;
+padding-bottom: 5px;
+margin-bottom: 40px;
 }
 
+.navbar-index a {
+  color: black;
+  font-size: 1.5em;
+  font-family: "bebas neue pro";
+  text-transform: uppercase;
+}
 
+.navbar-index .btn {
+  border-radius: 0px 20px 20px 20px;
+}
+
+.navbar-index ul {
+  text-align: center;
+}
+
+.navbar-index a:hover {
+  background-color: #214c57;
+  color: #ffffff;
+  
+}
+
+.mainWrapper {
+  padding-top: 10%;
+}
 .card-grid {
-  display: flex;
-  flex-flow: row wrap;
-  margin-left: 10%;
-  margin-right: 10%;
     margin-bottom: 20px;
     margin-top: 20px;
   }
@@ -166,11 +245,6 @@ line-height: 20px;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
   margin-top: 60px;
-}
-
-.contentText {
-  max-width: 500px;
-  margin: 0 auto;
 }
 
 
@@ -191,47 +265,28 @@ line-height: 20px;
   box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
 }
 
-.card h2 {
-  padding: 20px;
-  font-family: "bebas neue pro";
-}
-
-.card article {
-  padding: 20px;
-  font-family: "bebas neue pro light";
-}
-
-.card span {
-  font-size: 12px;
-  font-weight: bold;
-  text-transform: uppercase;
-  margin: 2em 0 0 0;
-}
 
 
-.card .thumb {
+
+.card .card_image {
   padding-bottom: 50%;
   background-size: cover;
   background-position: center center;
 }
 
 
-
-.footer {
-  position: fixed;
-  bottom: 0;
-}
-
 .footer-container {
-  background: #fb8b00;
+  display: flex;
+  justify-content: space-between;
+  background: #214c57;
   box-sizing: border-box;
   width: 100%;
-  text-align: start;
-  padding-left: 80px;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  margin-top: 80px;
-  margin-bottom: 0px;
+  padding-left: 15%;
+  padding-right: 10%;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  margin-top: 15%;
+  margin-bottom: 10%;
 }
 
 .footer-container .footer-left,
@@ -239,28 +294,32 @@ line-height: 20px;
 .footer-container .footer-right {
   display: inline-block;
   vertical-align: top;
+  color: #ffffff;
+
 }
 
 .footer-container .footer-links {
-  color: #ffff;
-  font-size: 15px;
+  font-size: 1em;
   display: flex;
   flex-direction: column;
 }
 
 .footer-container .footer-links a:hover {
-  color: rgb(0, 255, 76);
+  color: #bcfd2b;
 }
 
 .footer-container .footer-links a{
   display: block;
   line-height: 2;
-  color: white;
+  color: #ffffff;
   text-transform: uppercase;
 }
 .footer-container .footer-center {
   width: 30%;
-  margin-left: 20%;
+}
+
+.footer-container .footer-center p {
+  margin-bottom: 0.5em;
 }
 
 .footer-container .footer-hours p:nth-child(1) {
@@ -271,30 +330,29 @@ line-height: 20px;
 .footer-container .footer-hours {
   display: block;
   color: #ffffff;
-  font-size: 15px;
-  margin-bottom: 10px;
-  vertical-align: middle;
-
+  font-size: 1em;
 }
+
+
 
 .footer-container .footer-right {
   width: 30%;
   float: right;
 }
 
-.footer-container .footer-right i {
-  color: #ffff;
-  font-size: 15px;
-}
 
 
 .footer-container .footer-right p  {
   display: block;
-  font-size: 15px;
-  color: #ffff;
-
-
+  font-size: 1em;
+  color: #ffffff;
+  margin-bottom: 0.5em;
 }
+
+.footer-container .footer-right p:nth-child(1)  {
+  font-weight: 600;
+}
+
 
 .footer-container .footer-right p a {
   color: #ffffff;
@@ -312,15 +370,16 @@ input[type="email"] {
 }
 
 .footer-container .footer-right p a:hover {
-  color: rgb(0, 255, 200);
+  color: #bcfd2b;
 }
 
 .sm-icons {
   display: flex;
+  margin-bottom: 2%;
 }
 
 .sm-icons a {
-  background-color: rgb(0, 0, 0);
+  background-color: #000000;
   color: #ffff;
   font-size: 20px;
   width: 40px;
@@ -355,40 +414,30 @@ background-color: pink;
 }
 
 
-.footer-signup {
-  flex-direction: row;
+.footer_2 {
+  height: 200px;
   display: flex;
-  justify-content: space-around;
-  margin-bottom: 30px;
+  justify-content: center;
+  color: #000000;
+  font-family: "roboto", Helvetica, sans-serif;
+  margin-top: 2%;
+  font-size: 16px;
+  color: #000000;
+
 }
 
 
-.footer_2 {
-  height: 250px;
+.socialmedia {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  color: #000000;
-  box-sizing: border-box;
-  text-align: center;
-  font-family: "industry light", Helvetica, sans-serif;
-  margin-left: 10%;
-  margin-right: 20%;
+  justify-content: center;
 }
 
 .footer ul {
   display: inline-grid;
   grid-auto-flow: column;
   justify-items: center;
-  margin: auto;
-  list-style: none;
 }
 
-.form-container {
-  display: flex;
-  font-family: "roboto";
-}
 
 fieldset {
   border: 0;
@@ -399,7 +448,6 @@ input [type="email"] {
   flex-direction: row;
   padding: 1em;
   border: #ffffff;
-  width: 100%;
   margin: 0.3em 0;
   box-sizing: border-box;
   outline: none;
@@ -407,24 +455,38 @@ input [type="email"] {
   width: 200px;
   border: 1px solid transparent;
 }
+.contact-form p {
+font-size: 1.6em;
+font-family: "bebas neue pro";
+font-weight: 600;
+text-transform: uppercase;
+padding: 0.2em;
+}
 
 input[type="email"] {
   padding: 1em;
+  color: #000000;
+  border: 1px solid green;
+
 }
 
 button[type="submit"] {
-  width: 100px;
+  width: auto;
   background-color: #fb8b00;
-  color: #ffff;
-  padding: 5px 5px;
+  color: #ffffff;
+  padding: 8px 8px 8px 8px;
   border: none;
+  border-radius: 0px 10px 10px 10px;
   cursor: pointer;
   font-family: "roboto" sans-serif;
-  font-size: 14px;
+  font-size: 1em;
+  font-weight: 600;
+
 }
 
 button[type="submit"]:hover {
- padding: 8px 8px 8px 8px;
+  background-color: black;
+
 }
 
 
@@ -439,9 +501,10 @@ input[type="email"]:focus {
 .company-name {
   text-align: center;
   font-family: "bebas neue pro";
-  padding-bottom: 20px;
+  margin-bottom: 3%;
   color: black;
 }
+
 
 
 /* Media Query*/
@@ -450,55 +513,64 @@ input[type="email"]:focus {
 
 
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 800px) {
   header img {
     margin-left: 5%;
   }
 
-  header ul {
-    display: none;
-  }
-  header {
-    text-align: center;
-  }
   .menu {
-    width: 100%;
-    height: auto;
-    background-color: white;
+    background-color: #ffffff;
   }
   .menu ul {
     display: block;
     max-height: 0;
     overflow: hidden;
+    width: 100%;
   }
   .menu ul a {
-    text-align: center;
-    width: 100%;
-    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 20%;
+    z-index: 1;
   }
+
   .menu-icon {
     width: auto;
-    height: inherit;
     display: block;
     position: absolute;
     margin-right: 5%;
     top: 0;
     right: 0;
-    line-height: 60px;
   }
+
+  #menuToggle:checked ~ .menu-icon i {
+  background-color: rgb(16, 179, 130);
+  padding: 5px;
+  margin-top: 5px;
+  }
+
   #menuToggle:checked ~ ul {
-    margin-top: 100px;
+    margin-top: 0px;
     max-height: 350px;
+    padding: 40px;
     background-color: white;
+
   }
   .menu-icon i {
     font-size: 1em;
   }
-  .navbar a {
-font-size: 20px;
-padding: 2px;
-margin: 4px;
+
+  input[type="text"] {
+    justify-content: center;
+
+margin-left: 25%;
   }
+  .navbar-index a {
+    font-size: 24px;
+    padding: 2px;
+  }
+
 .header-text {
   margin-left: 1%;
 }
@@ -506,6 +578,10 @@ margin: 4px;
     width: 90%;
   }
 
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+  }
   .footer-container .footer-left,
   .footer-container .footer-center,
   .footer-container .footer-right {
@@ -536,13 +612,12 @@ margin: 4px;
   }
   
 
-  .main {
-    line-height: normal;
-  }
   .sm-icons {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
   }
+  
 
 }
 
@@ -558,5 +633,19 @@ margin: 4px;
   .hamburger-label {
     display: none;
   }
+
+  .menu ul li {
+    color: #000000;
+    margin-right: 15px;
+    display: inline-block;
+  }
+  .menu ul a {
+    font-size: 24px;
+
+
+    padding: 0;
+    margin-left: -25px;
+  }
+
 
 }
